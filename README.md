@@ -1,5 +1,5 @@
 ![Flutter Banner](http://engineering.letsnurture.com/wp-content/uploads/2018/07/flutter.png)
-# QUARANTEAM 
+# QUARANTEAM HACKATHON
 ## Medigo 🏥
 This is a Healthcare app. The name of this app is Medigo. 
 ### Team Name: BETA ZEPHYRUS
