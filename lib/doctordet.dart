@@ -19,22 +19,22 @@ class DocDet extends StatelessWidget {
       name = 'Ross';
       spec = 'Pediatrician';
       cost = 25;
-      img = 'assets/doctor(1).png';
+      img = 'assets/doctors.png';
     } else if (det == 2) {
       name = 'Phoebe';
       spec = 'Cardiologist';
       cost = 45;
-      img = 'assets/doctor(2).png';
+      img = 'assets/doctorss.png';
     } else if (det == 3) {
       name = 'Rachel';
       spec = 'Dermatologist';
       cost = 20;
-      img = 'assets/doctor(3).png';
+      img = 'assets/doctorss.png';
     } else if (det == 4) {
       name = 'Joey';
       spec = 'Gynecologist';
       cost = 50;
-      img = 'assets/doctor(1).png';
+      img = 'assets/doctors.png';
     }
     return Scaffold(
         body: SingleChildScrollView(
@@ -42,16 +42,54 @@ class DocDet extends StatelessWidget {
       children: [
         SizedBox(height: height * 0.2),
         Center(child: Image.asset(img, height: height * 0.3)),
+        SizedBox(height: height * 0.1),
         Center(
-          child: Text(name),
-        ),
+            child: Text(
+          name,
+          style: TextStyle(
+            color: Colors.black,
+            fontWeight: FontWeight.bold,
+            fontSize: height * 0.06,
+            letterSpacing: height * 0.006,
+          ),
+        )),
+        SizedBox(height: height * 0.02),
         Center(
-          child: Text(spec),
+          child: Text(
+            spec,
+            style: TextStyle(
+              color: Colors.black,
+              fontWeight: FontWeight.bold,
+              fontSize: height * 0.03,
+              letterSpacing: height * 0.006,
+            ),
+          ),
         ),
+        SizedBox(height: height * 0.02),
         Center(
-          child: Text('$cost/hour'),
+          child: Text(
+            '$cost\$/hour',
+            style: TextStyle(
+              color: Colors.black,
+              fontWeight: FontWeight.bold,
+              fontSize: height * 0.02,
+              letterSpacing: height * 0.006,
+            ),
+          ),
         ),
-        TextButton(onPressed: () {}, child: Text('BOOK NOW'))
+        SizedBox(height: height * 0.05),
+        TextButton(
+            style: ElevatedButton.styleFrom(
+                primary: Colors.green,
+                padding: EdgeInsets.fromLTRB(40, 20, 40, 20),
+                shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(28.0),
+                    side: BorderSide(color: Colors.lightBlueAccent))),
+            onPressed: () {},
+            child: Text('BOOK NOW',
+                style: TextStyle(
+                  color: Colors.black,
+                )))
       ],
     )));
   }
