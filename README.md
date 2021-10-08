@@ -1,8 +1,9 @@
 ![Flutter Banner](http://engineering.letsnurture.com/wp-content/uploads/2018/07/flutter.png)
-# Medigo 🛍️
+# QUARANTEAM 
+## Medigo 🏥
 This is a Healthcare app. The name of this app is Medigo. 
-## Team Name: BETA ZEPHYRUS
-## Domain: HEALTHCARE
+### Team Name: BETA ZEPHYRUS
+### Domain: HEALTHCARE
 ### Features
   1. Login
   2. Signup
